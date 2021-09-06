@@ -9,4 +9,10 @@ import pandas as pd
 
 df = pd.read_csv("Ghi_2013_2014.csv", delimiter=",")
 
+Ghi = df["Ghi estimado"]
 
+
+
+
+frecuencia_ghi = Ghi.value_counts() 
+frecuencia_acumulativa_ghi = frecuencia_ghi.cumsum()
